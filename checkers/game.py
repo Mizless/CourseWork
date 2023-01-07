@@ -215,9 +215,10 @@ class Game:
             game_over = True
         if self.__field.kingScore():
             if self.__field.flagWK:
-                # Чёрные проиграли
+                #Черные проиграли
                 answer = messagebox.showinfo('Конец игры', 'Белые выиграли')
             else:
+                #Белые проиграли
                 answer = messagebox.showinfo('Конец игры', 'Чёрные выиграли')
             game_over = True
 
@@ -258,7 +259,7 @@ class Game:
         if (optimal_moves):
             # Фильтрация хода
             for move in choice(optimal_moves):
-                if   (side == SideType.WHITE and self.__field.type_piece(move.from_x, move.from_y) in BLACK_CHECKERS): break
+                if (side == SideType.WHITE and self.__field.type_piece(move.from_x, move.from_y) in BLACK_CHECKERS): break
                 elif (side == SideType.BLACK and self.__field.type_piece(move.from_x, move.from_y) in WHITE_CHECKERS): break
 
                 optimal_move.append(move)
