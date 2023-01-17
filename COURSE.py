@@ -1,6 +1,3 @@
-#!/urs/bin/python3
-#-*- coding: utf-8 -*-
-
 from PyQt5 import QtWidgets
 from PyQt5.uic import loadUi
 from PyQt5.QtWidgets import QApplication, QMainWindow, QMessageBox

@@ -5,7 +5,7 @@ from checkers.constants import X_SIZE, Y_SIZE, CELL_SIZE
 def main():
     # Создание окна
     main_window = Tk()
-    main_window.title('Шашки')
+    main_window.title('Скифские шашки')
     main_window.resizable(0, 0)
     main_window.iconphoto(False, PhotoImage(file='icon.png'))
 
@@ -20,5 +20,3 @@ def main():
 
     main_window.mainloop()
 
-# if __name__ == '__main__':
-#     main()

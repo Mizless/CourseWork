@@ -137,6 +137,7 @@ def check_login(username, password):
     except:
         return False
 
+#Проверка регистрации
 def check_registr(username, password):
 
     try:

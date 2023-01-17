@@ -384,6 +384,7 @@ class Game:
 
                         if (self.__field.type_piece(x + offset.x, y + offset.y) == CheckerType.NONE):
                             moves_list.append(Move(x, y, x + offset.x, y + offset.y))
+
                 # Для вождя
                 elif (self.__field.type_piece(x, y) == friendly_checkers[2]):
                     for offset in MOVE_OFFSETS[:2] if side == SideType.WHITE else MOVE_OFFSETS[2:]:

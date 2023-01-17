@@ -56,7 +56,9 @@ class Field:
         '''Получение типа шашки на поле по координатам'''
         return self.__checkers[y][x].type
 
+
     def kingScore(self):
+        '''Проверка на взятие вождя'''
         for y in range(self.y_size):
             for x in range(self.x_size):
                 if self.type_piece(x, y) == CheckerType.WHITE_KING:
@@ -67,6 +69,7 @@ class Field:
             return False
         else:
             return True
+
     def at_coordinate(self, x: int, y: int) -> Checker:
         '''Получение шашки на поле по координатам'''
         return self.__checkers[y][x]
